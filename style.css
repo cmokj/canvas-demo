@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+ol,
+ul {
+    list-style: none;
+}
+.icon {
+    width: 55px; 
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    transition: all 0.1s;
+ }
+.actions {
+    position: fixed;
+    bottom: -65px;
+    left: 0;
+}
+.actions > #clear {
+    position: fixed;
+    width: 40px;
+    bottom: -55px;
+    right: 70px;
+}
+.actions > #download {
+    position: fixed;
+    width: 40px;
+    bottom: -55px;
+    right: 15px;
+}
+.canvas {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.icon.active{
+    transform: translateY(-10px);
+}
+.colors {
+    position: fixed;
+    bottom: 50px;
+    left: -28px;
+}
+.colors > li {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: 18px;
+}
+#red {
+    background-color: red;
+}
+#blue {
+    background-color: blue;
+}
+#black {
+    background-color: black;
+}
+#red.active,
+#blue.active,
+#black.active {
+    transform: scale(1.2);
+}
